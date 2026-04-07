@@ -1,0 +1,31 @@
+{
+  "name": "@mcpware/claude-code-backup",
+  "version": "0.1.0",
+  "description": "Automatic backup and sync of all Claude Code settings to GitHub",
+  "type": "module",
+  "bin": {
+    "claude-code-backup": "./bin/cli.mjs"
+  },
+  "files": [
+    "bin/",
+    "src/"
+  ],
+  "keywords": [
+    "claude-code",
+    "backup",
+    "sync",
+    "dotfiles",
+    "settings",
+    "skills",
+    "memories"
+  ],
+  "author": "mcpware",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mcpware/claude-code-backup"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
