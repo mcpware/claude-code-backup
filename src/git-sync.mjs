@@ -10,7 +10,11 @@ import { join } from "node:path";
 const exec = promisify(execFile);
 
 function git(args, cwd) {
-  return exec("git", args, { cwd, timeout: 30_000 });
+  return exec("git", args, {
+    cwd,
+    timeout: 30_000,
+    env: { ...process.env, GIT_SSH_COMMAND: process.env.GIT_SSH_COMMAND || "ssh" },
+  });
 }
 
 /**
